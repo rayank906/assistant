@@ -1,15 +1,13 @@
-"""Chapter/section chunks for the numbered EECS 280 notes PDF."""
-
 from bisect import bisect_right
 from dataclasses import dataclass
 import re
-
 import fitz
 from sentence_transformers import SentenceTransformer
+import faiss
+import numpy as np
 
 PDF_PATH = "eecs280notes.pdf"
 model = SentenceTransformer("all-MiniLM-L6-v2")
-
 
 @dataclass
 class SectionChunk:
@@ -102,27 +100,30 @@ def extract_section_chunks(pdf_path):
 
 
 
-def create_search_passages(chunks):
+def create_search_passages(chunks, include_ranges=False):
     """Index bounded passages while retaining complete sections for retrieval."""
     encoder = model
     tokenizer = encoder.tokenizer
-    passages, parents = [], []
+    passages, parents, ranges = [], [], []
     for parent, chunk in enumerate(chunks):
         heading = chunk.chapter + (" > " + chunk.section if chunk.section else " > Introduction")
         prefix = tokenizer.encode(heading + "\n", add_special_tokens=False)
         budget = encoder.max_seq_length - tokenizer.num_special_tokens_to_add(pair=False) - len(prefix)
         if budget <= 0:
             raise ValueError("Heading exceeds the embedding model's token budget")
-        tokens = tokenizer.encode(chunk.text, add_special_tokens=False)
+        encoded = tokenizer(chunk.text, add_special_tokens=False, return_offsets_mapping=True)
+        tokens = encoded["input_ids"]
+        offsets = encoded["offset_mapping"]
         for start in range(0, len(tokens), budget):
             passages.append(tokenizer.decode(prefix + tokens[start:start + budget]))
             parents.append(parent)
+            ranges.append((offsets[start][0], offsets[min(start + budget, len(tokens)) - 1][1]))
+    if include_ranges:
+        return passages, parents, ranges
     return passages, parents
 
 
 def create_embeddings(passages):
-    import faiss
-    import numpy as np
     if not passages:
         raise ValueError("No passages to index")
     embeddings = model.encode(passages, normalize_embeddings=True)
