@@ -1,6 +1,5 @@
 from pathlib import Path
 import os
-
 import streamlit as st
 
 from answer import answer_question, build_knowledge_base

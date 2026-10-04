@@ -1,10 +1,7 @@
-"""Retrieval and grounded answers, independent of the frontend."""
-
 from dataclasses import dataclass, field
 import os
 from pathlib import Path
 from threading import Lock
-
 import httpx
 from dotenv import load_dotenv
 
