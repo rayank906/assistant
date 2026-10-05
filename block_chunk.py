@@ -1,12 +1,13 @@
 from bisect import bisect_right
 from dataclasses import dataclass
 import re
+from pathlib import Path
 import fitz
 from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
 
-PDF_PATH = "eecs280notes.pdf"
+PDF_PATH = str(Path(__file__).with_name("eecs280") / "eecs280notes.pdf")
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 @dataclass
@@ -16,6 +17,9 @@ class SectionChunk:
     text: str
     page_start: int
     page_end: int
+    course: str = "280"
+    source_file: str = ""
+    subsection: str | None = None
 
 
 def extract_section_chunks(pdf_path):
@@ -90,6 +94,7 @@ def extract_section_chunks(pdf_path):
                 continue
             last_content = body_start + len(full_text[body_start:end].rstrip()) - 1
             chunks.append(SectionChunk(
+                source_file=Path(pdf_path).name,
                 chapter=chapter,
                 section=label if level == 3 else None,
                 text=body,
@@ -107,6 +112,8 @@ def create_search_passages(chunks, include_ranges=False):
     passages, parents, ranges = [], [], []
     for parent, chunk in enumerate(chunks):
         heading = chunk.chapter + (" > " + chunk.section if chunk.section else " > Introduction")
+        if chunk.subsection:
+            heading += " > " + chunk.subsection
         prefix = tokenizer.encode(heading + "\n", add_special_tokens=False)
         budget = encoder.max_seq_length - tokenizer.num_special_tokens_to_add(pair=False) - len(prefix)
         if budget <= 0:
