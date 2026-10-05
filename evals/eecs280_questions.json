@@ -1,0 +1,336 @@
+[
+  {
+    "id": "q001",
+    "question": "What is procedural abstraction and why should an abstraction be local?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-5:5.4"
+    ],
+    "tags": [
+      "conceptual"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q002",
+    "question": "How does a function call use the call stack?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-8:8.2"
+    ],
+    "tags": [
+      "conceptual"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q003",
+    "question": "Why hide the representation of an abstract data type?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-16:16.6"
+    ],
+    "tags": [
+      "conceptual"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q004",
+    "question": "What is the difference between static and dynamic binding?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-18:18.3"
+    ],
+    "tags": [
+      "conceptual"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q005",
+    "question": "How do shallow copies differ from deep copies?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-26:26.3"
+    ],
+    "tags": [
+      "conceptual"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q006",
+    "question": "What does dynamic_cast do?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-18:18.4"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q007",
+    "question": "What is size_t used for?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-22:22.6"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q008",
+    "question": "What is RAII?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-25:25.1"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q009",
+    "question": "What does override mean on a member function?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-18:18.6"
+    ],
+    "tags": [
+      "exact-term",
+      "syntax"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q010",
+    "question": "How is operator= implemented for assignment?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-26:26.2"
+    ],
+    "tags": [
+      "exact-term",
+      "code"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q011",
+    "question": "Why would a class constructor use a member initialization list?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-16:16.8"
+    ],
+    "tags": [
+      "code",
+      "syntax"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q012",
+    "question": "How can I write a range-based for loop over a container?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-19:19.1"
+    ],
+    "tags": [
+      "code",
+      "syntax"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q013",
+    "question": "How can I read values from a file with ifstream?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-13:13.3"
+    ],
+    "tags": [
+      "code"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q014",
+    "question": "Why can modifying a container invalidate its iterator?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-28:28.4"
+    ],
+    "tags": [
+      "conceptual",
+      "code"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q015",
+    "question": "How do new[] and delete[] manage a dynamic array?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-24:24.5"
+    ],
+    "tags": [
+      "syntax",
+      "code"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q016",
+    "question": "How can const apply to a pointer versus a reference?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-9:9.1",
+      "280:eecs280notes.pdf:chapter-9:9.2"
+    ],
+    "tags": [
+      "multi-section",
+      "syntax"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q017",
+    "question": "How do constructors and the Big Three manage initialization and copying?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-16:16.3",
+      "280:eecs280notes.pdf:chapter-26:26.4"
+    ],
+    "tags": [
+      "multi-section",
+      "conceptual"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q018",
+    "question": "How do exceptions differ from returning error codes?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-35:35.3",
+      "280:eecs280notes.pdf:chapter-35:35.4"
+    ],
+    "tags": [
+      "multi-section",
+      "conceptual"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q019",
+    "question": "What does REQUIRES mean in an RME specification?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-5:5.3"
+    ],
+    "tags": [
+      "exact-term"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  },
+  {
+    "id": "q020",
+    "question": "How do C-style strings differ from std::string?",
+    "relevant_sections": [
+      "280:eecs280notes.pdf:chapter-39:39.1",
+      "280:eecs280notes.pdf:chapter-39:39.2"
+    ],
+    "tags": [
+      "multi-section",
+      "conceptual"
+    ],
+    "validation": {
+      "status": "unvalidated-sample",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Proposed label for pipeline smoke testing. Human must read the question and source and identify all acceptable parent sections."
+    }
+  }
+]

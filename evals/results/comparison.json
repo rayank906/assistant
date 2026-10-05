@@ -1,0 +1,301 @@
+{
+  "label_status": "UNVALIDATED SAMPLE \u2014 NOT FINAL EVIDENCE",
+  "dataset_sha256": "2f339385deb954ae7a7cd000ad8fd9176ccc8fb56f360420f0c09ea4fd00ba78",
+  "corpus_fingerprint": "093db695de789a233c1a92d9ae4db7ece78772006d264bc5cbf5359841b1befc",
+  "mrr_depth": 10,
+  "methods": {
+    "dense": {
+      "aggregate": {
+        "queries": 20,
+        "recall@1": 0.65,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 0.8083333333333332,
+        "mean_latency_ms": 17.4932751499,
+        "p50_latency_ms": 17.58538449939806,
+        "p95_latency_ms": 20.25655950010332
+      },
+      "per_tag": {
+        "code": {
+          "queries": 6,
+          "recall@1": 0.8333333333333334,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.9166666666666666,
+          "mean_latency_ms": 16.83506983317784,
+          "p50_latency_ms": 16.862747999766725,
+          "p95_latency_ms": 19.582556250043126
+        },
+        "conceptual": {
+          "queries": 9,
+          "recall@1": 0.5555555555555556,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.7407407407407407,
+          "mean_latency_ms": 18.0208567774874,
+          "p50_latency_ms": 17.748892998497467,
+          "p95_latency_ms": 20.184756199887488
+        },
+        "exact-term": {
+          "queries": 6,
+          "recall@1": 0.8333333333333334,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.9166666666666666,
+          "mean_latency_ms": 17.468492833662214,
+          "p50_latency_ms": 17.631109500143793,
+          "p95_latency_ms": 20.19588475013734
+        },
+        "multi-section": {
+          "queries": 4,
+          "recall@1": 0.25,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.5833333333333333,
+          "mean_latency_ms": 17.736111749400152,
+          "p50_latency_ms": 17.147031499007426,
+          "p95_latency_ms": 19.561975749820704
+        },
+        "syntax": {
+          "queries": 5,
+          "recall@1": 0.4,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.7,
+          "mean_latency_ms": 17.58406439985265,
+          "p50_latency_ms": 18.01901699946029,
+          "p95_latency_ms": 20.17654240007687
+        }
+      },
+      "timing": {
+        "corpus_setup_seconds": 6.43507713299914,
+        "corpus_cache_hit": true,
+        "retriever_setup_seconds": 0.0005268519998935517,
+        "evaluation_seconds": 0.3610373770006845,
+        "warmup_queries": 1,
+        "query_latency_includes": "query encoding, candidate retrieval, fusion and reranking as applicable; excludes loading/index construction"
+      }
+    },
+    "bm25": {
+      "aggregate": {
+        "queries": 20,
+        "recall@1": 0.55,
+        "recall@3": 0.85,
+        "recall@5": 0.85,
+        "mrr": 0.6988095238095238,
+        "mean_latency_ms": 0.19286444994577323,
+        "p50_latency_ms": 0.18682749941945076,
+        "p95_latency_ms": 0.29939375053800177
+      },
+      "per_tag": {
+        "code": {
+          "queries": 6,
+          "recall@1": 0.5,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.6944444444444443,
+          "mean_latency_ms": 0.17226216671891356,
+          "p50_latency_ms": 0.17438350005249958,
+          "p95_latency_ms": 0.19968024980698829
+        },
+        "conceptual": {
+          "queries": 9,
+          "recall@1": 0.7777777777777778,
+          "recall@3": 0.8888888888888888,
+          "recall@5": 0.8888888888888888,
+          "mrr": 0.8518518518518517,
+          "mean_latency_ms": 0.2255582221550867,
+          "p50_latency_ms": 0.20951899932697415,
+          "p95_latency_ms": 0.30689300001540687
+        },
+        "exact-term": {
+          "queries": 6,
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 0.6666666666666666,
+          "mrr": 0.5238095238095238,
+          "mean_latency_ms": 0.14545299988337015,
+          "p50_latency_ms": 0.14001500039739767,
+          "p95_latency_ms": 0.19146524982716073
+        },
+        "multi-section": {
+          "queries": 4,
+          "recall@1": 0.75,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.875,
+          "mean_latency_ms": 0.24306849991262425,
+          "p50_latency_ms": 0.23694500032434007,
+          "p95_latency_ms": 0.3044092996788095
+        },
+        "syntax": {
+          "queries": 5,
+          "recall@1": 0.2,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.5333333333333333,
+          "mean_latency_ms": 0.1909620001242729,
+          "p50_latency_ms": 0.18761799947242253,
+          "p95_latency_ms": 0.21230900056252722
+        }
+      },
+      "timing": {
+        "corpus_setup_seconds": 6.43507713299914,
+        "corpus_cache_hit": true,
+        "retriever_setup_seconds": 0.10316814700126997,
+        "evaluation_seconds": 0.011389934999897378,
+        "warmup_queries": 1,
+        "query_latency_includes": "query encoding, candidate retrieval, fusion and reranking as applicable; excludes loading/index construction"
+      }
+    },
+    "hybrid": {
+      "aggregate": {
+        "queries": 20,
+        "recall@1": 0.75,
+        "recall@3": 0.95,
+        "recall@5": 0.95,
+        "mrr": 0.8333333333333333,
+        "mean_latency_ms": 16.009343349833216,
+        "p50_latency_ms": 15.680651500588283,
+        "p95_latency_ms": 20.2086378995773
+      },
+      "per_tag": {
+        "code": {
+          "queries": 6,
+          "recall@1": 0.8333333333333334,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.8888888888888888,
+          "mean_latency_ms": 16.439298999709234,
+          "p50_latency_ms": 15.890555499936454,
+          "p95_latency_ms": 19.33131749956374
+        },
+        "conceptual": {
+          "queries": 9,
+          "recall@1": 0.6666666666666666,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.8148148148148148,
+          "mean_latency_ms": 16.5143066666739,
+          "p50_latency_ms": 15.943366999636055,
+          "p95_latency_ms": 20.95102679959382
+        },
+        "exact-term": {
+          "queries": 6,
+          "recall@1": 0.8333333333333334,
+          "recall@3": 0.8333333333333334,
+          "recall@5": 0.8333333333333334,
+          "mrr": 0.8333333333333334,
+          "mean_latency_ms": 14.421677166258936,
+          "p50_latency_ms": 14.341026999318274,
+          "p95_latency_ms": 17.03950624960271
+        },
+        "multi-section": {
+          "queries": 4,
+          "recall@1": 0.75,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.875,
+          "mean_latency_ms": 18.660937999811722,
+          "p50_latency_ms": 18.017030500232067,
+          "p95_latency_ms": 22.02308754931437
+        },
+        "syntax": {
+          "queries": 5,
+          "recall@1": 0.8,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.8666666666666666,
+          "mean_latency_ms": 16.804422599670943,
+          "p50_latency_ms": 16.10151899876655,
+          "p95_latency_ms": 19.594624799719895
+        }
+      },
+      "timing": {
+        "corpus_setup_seconds": 6.43507713299914,
+        "corpus_cache_hit": true,
+        "retriever_setup_seconds": 0.10502566600007412,
+        "evaluation_seconds": 0.33055592099844944,
+        "warmup_queries": 1,
+        "query_latency_includes": "query encoding, candidate retrieval, fusion and reranking as applicable; excludes loading/index construction"
+      }
+    },
+    "hybrid_rerank": {
+      "aggregate": {
+        "queries": 20,
+        "recall@1": 0.75,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "mrr": 0.8583333333333332,
+        "mean_latency_ms": 2243.8418006002394,
+        "p50_latency_ms": 2204.2780959991433,
+        "p95_latency_ms": 2606.3413689997105
+      },
+      "per_tag": {
+        "code": {
+          "queries": 6,
+          "recall@1": 0.6666666666666666,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.8055555555555555,
+          "mean_latency_ms": 2292.288848999609,
+          "p50_latency_ms": 2204.2780959991433,
+          "p95_latency_ms": 2539.743791499859
+        },
+        "conceptual": {
+          "queries": 9,
+          "recall@1": 0.6666666666666666,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.8148148148148148,
+          "mean_latency_ms": 2146.371650444861,
+          "p50_latency_ms": 2147.1512409989373,
+          "p95_latency_ms": 2376.9410422013607
+        },
+        "exact-term": {
+          "queries": 6,
+          "recall@1": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0,
+          "mean_latency_ms": 2376.485044000219,
+          "p50_latency_ms": 2364.607955500105,
+          "p95_latency_ms": 2609.840329751023
+        },
+        "multi-section": {
+          "queries": 4,
+          "recall@1": 0.75,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.8333333333333333,
+          "mean_latency_ms": 2160.87450725081,
+          "p50_latency_ms": 2154.7672630003945,
+          "p95_latency_ms": 2381.974979351071
+        },
+        "syntax": {
+          "queries": 5,
+          "recall@1": 0.6,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 0.7666666666666666,
+          "mean_latency_ms": 2248.852739400172,
+          "p50_latency_ms": 2199.5901049995155,
+          "p95_latency_ms": 2507.7584314007254
+        }
+      },
+      "timing": {
+        "corpus_setup_seconds": 6.43507713299914,
+        "corpus_cache_hit": true,
+        "retriever_setup_seconds": 0.3491334160007682,
+        "evaluation_seconds": 44.888723881998885,
+        "warmup_queries": 1,
+        "query_latency_includes": "query encoding, candidate retrieval, fusion and reranking as applicable; excludes loading/index construction"
+      }
+    }
+  },
+  "observations": [
+    "bm25 versus dense: R@5 gains []; losses ['q003', 'q006', 'q007']; first-relevant-rank improvements ['q004', 'q005', 'q017', 'q020']; regressions ['q003', 'q006', 'q007', 'q010', 'q011', 'q015'].",
+    "hybrid versus dense: R@5 gains []; losses ['q006']; first-relevant-rank improvements ['q005', 'q009', 'q016', 'q017']; regressions ['q003', 'q006', 'q011'].",
+    "hybrid_rerank versus hybrid: R@5 gains ['q006']; losses []; first-relevant-rank improvements ['q003', 'q004', 'q006', 'q020']; regressions ['q005', 'q015', 'q017']."
+  ]
+}
